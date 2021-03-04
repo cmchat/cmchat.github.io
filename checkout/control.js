@@ -10,19 +10,22 @@ angular.module('v3App', ['ngClickCopy'])
     var studentId = url.searchParams.get("studentId");
     var courseId = url.searchParams.get("courseId");
     var projectUrl = url.searchParams.get("projectUrl");
-    var nextCourse = url.searchParams.get("nextCourse");
+    var nextCourse = url.searchParams.get("nextCourse");    
+    var sid = url.searchParams.get("sid");
 
     console.log(stuName);
     console.log(studentId);
     console.log(courseId);
     console.log(projectUrl);
     console.log(nextCourse);
+    console.log(sid);
 
     if (nextCourse != null) {
     	$scope.nextCourse = nextCourse;
     }
 
     $scope.name = stuName;
+    $scope.sid = sid;
     $scope.summaryURL = "https://codingmindsacademy.com/feedback_ECv3.html?studentId=" + studentId + "&courseId=" + courseId;
     $scope.projectURL = projectUrl;
 
