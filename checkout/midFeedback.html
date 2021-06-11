@@ -40,3 +40,90 @@
     <h2>Feedback</h2>
     <p class="lead">Detailed, Fast, Encouraging</p>
   </div>
+      
+  <div class="row">
+    
+    <div class="col-md-6 order-md-2 mb-6">
+      <h4 class="d-flex justify-content-between align-items-center mb-3">
+        <span class="text-muted">Messages (Click to Copy)</span>
+        <!-- <span class="badge badge-secondary badge-pill">3</span> -->
+      </h4>
+      <ul class="list-group mb-3">
+        <li class="list-group-item d-flex justify-content-between lh-condensed">
+          <div>
+            <h6 class="my-0">Step 0</h6>
+            <a href="" ng-click-copy="{{name}}家长您好！我是教研主任张老师，很高兴认识您！我的工作是和孙老师一起评估{{name}}这半学期的学习情况。">
+            <small class="text-muted">{{name}}家长您好！我是教研主任张老师，很高兴认识您！我的工作是和孙老师一起评估{{name}}这半学期的学习情况。</small>
+          </a>
+          </div>
+
+     </li>
+        <!-- <li class="list-group-item d-flex justify-content-between">
+          <span>Total (USD)</span>
+          <strong>$20</strong>
+        </li> -->
+      </ul>
+
+      <!-- <form class="card p-2">
+        <div class="input-group">
+          <input type="text" class="form-control" placeholder="Promo code">
+          <div class="input-group-append">
+            <button type="submit" class="btn btn-secondary">Redeem</button>
+          </div>
+        </div>
+      </form> -->
+    </div>
+
+    <div class="col-md-6 order-md-1">
+      <h4 class="mb-3">Student Info</h4>
+      <form class="needs-validation" novalidate>
+        <div class="row">
+          <div class="col-md-6 mb-3">
+            <label for="firstName">Student Name {{sid}}</label>
+            <input type="text" ng-model="name" class="form-control" id="firstName" placeholder="" value="">
+          </div>
+          <!-- <div class="col-md-6 mb-3">
+            <label for="lastName">Last name</label>
+            <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+            <div class="invalid-feedback">
+              Valid last name is required.
+            </div>
+          </div> -->
+        </div>
+
+        <div class="mb-3">
+          <label for="username">Semester Summary URL</label>
+          <div class="input-group">            
+            <input type="text" ng-model="summaryURL" class="form-control" id="username" placeholder="Summary URL">
+            <a href="{{summaryURL}}" target="_blank">Test</a>
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <label for="email">Project URL <span class="text-muted">(Optional)</span></label>
+          <input type="text" ng-model="projectURL" class="form-control" id="projectlink" placeholder="Project URL">
+          <a href="{{projectURL}}" target="_blank">Test</a>
+        </div>
+
+        <div class="mb-3">
+          <label for="email">Next Course <span class="text-muted">(Optional)</span></label>
+          <input type="text" ng-model="nextCourse" class="form-control" id="nextcourse" placeholder="Course name">
+        </div>
+
+
+        <hr class="mb-4">
+        <button class="btn btn-primary btn-lg btn-block" onclick="reset()">Reset</button>
+      </form>
+    </div>
+  </div>
+
+  <footer class="my-5 pt-5 text-muted text-center text-small">
+    <p class="mb-1">&copy; 2020 Coding Minds, Inc.</p>    
+  </footer>
+</div>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+      <script>window.jQuery || document.write('<script src="../assets/js/vendor/jquery.slim.min.js"><\/script>')</script><script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="form-validation.js"></script>        
+        
+  </body>
+</html>
