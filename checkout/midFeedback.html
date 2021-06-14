@@ -70,8 +70,8 @@
         <li class="list-group-item d-flex justify-content-between lh-condensed">
           <div>
             <h6 class="my-0">Step 1 (new student) </h6>
-            <a href="" ng-click-copy="{{name}}这半学期表现得很不错，授课老师反馈{{name}}探索求知欲强，理解能力也不错，上课与老师的交流也很积极。虽然一开始{{name}}对 编程 没有什么基础，但是 {{name}}悟性很高，上手得很快，这八节课已经学了一半多的教材，做了 XXXX project，很不错！">
-            <small class="text-muted">{{name}}这半学期表现得很不错，授课老师反馈{{name}}探索求知欲强，理解能力也不错，上课与老师的交流也很积极。虽然一开始{{name}}对 编程 没有什么基础，但是 {{name}}悟性很高，上手得很快，这八节课已经学了一半多的教材，做了 XXXX project，很不错！</small>
+            <a href="" ng-click-copy="{{name}}这半学期表现得很不错，授课老师反馈{{name}}探索求知欲强，理解能力也不错，上课与老师的交流也很积极。虽然一开始{{name}}对    编程没有什么基础，但是{{name}}悟性很高，上手得很快，课堂练习也会按时完成。下面的8周除了完成剩余的高级知识点外，我们也会在第10节课左右开始带{{name}}进行个人项目的开发。等课程结束的时候我会再给您对项目和整个学期的课程进行反馈总结。">
+            <small class="text-muted">{{name}}这半学期表现得很不错，授课老师反馈{{name}}探索求知欲强，理解能力也不错，上课与老师的交流也很积极。虽然一开始{{name}}对    编程没有什么基础，但是{{name}}悟性很高，上手得很快，课堂练习也会按时完成。下面的8周除了完成剩余的高级知识点外，我们也会在第10节课左右开始带{{name}}进行个人项目的开发。等课程结束的时候我会再给您对项目和整个学期的课程进行反馈总结。</small>
           </a>
           </div>
           <!-- <span class="text-muted">$12</span> -->  
@@ -79,27 +79,19 @@
         <li class="list-group-item d-flex justify-content-between lh-condensed">
           <div>
             <h6 class="my-0">Step 1 (old student) </h6>
-            <a href="" ng-click-copy="{{name}}这半学期在XXX课程上表现得很不错， 授课老师反映{{name}}上课态度很认真，遇到问题会主动提问。XXX 课程的教案{{name}}已经学了 XXX 部分，完成了 xxx 项目和练习， 非常不错！">
-            <small class="text-muted">{{name}}这半学期在XXX课程上表现得很不错， 授课老师反映{{name}}上课态度很认真，遇到问题会主动提问。XXX 课程的教案{{name}}已经学了 XXX 部分，完成了 xxx 项目和练习， 非常不错！</small>
+            <a href="" ng-click-copy="{{name}}这半学期在XXX课程上表现得很不错，授课老师反映{{name}}上课态度很认真，遇到问题会及时提问，课堂练习也会按时完成。接下来的8周{{name}}除了完成剩余的高级知识点外，我们也会在第10节课左右开始带{{name}}进行个人项目的开发。课程结束的时候我会再给您对项目和整个学期的课程进行反馈总结。">
+            <small class="text-muted">{{name}}这半学期在XXX课程上表现得很不错，授课老师反映{{name}}上课态度很认真，遇到问题会及时提问，课堂练习也会按时完成。接下来的8周{{name}}除了完成剩余的高级知识点外，我们也会在第10节课左右开始带{{name}}进行个人项目的开发。课程结束的时候我会再给您对项目和整个学期的课程进行反馈总结。</small>
           </a>
           </div>
-
+          <!-- <span class="text-muted">$5</span> -->
+        </li>
+        <li class="list-group-item d-flex justify-content-between bg-light">
+          <div class="text-success">
+            <h6 class="my-0">Final Step</h6>
+            <a href="" ng-click-copy="您如果对{{name}}的学习和我们的工作有什么反馈，请您随时与我们联系，感谢您对我们工作的支持！"><small>您如果对{{name}}的学习和我们的工作有什么反馈，请您随时与我们联系，感谢您对我们工作的支持！</small></a>
+          </div>    		  
+        </li>
      </li>
-        <!-- <li class="list-group-item d-flex justify-content-between">
-          <span>Total (USD)</span>
-          <strong>$20</strong>
-        </li> -->
-      </ul>
-
-      <!-- <form class="card p-2">
-        <div class="input-group">
-          <input type="text" class="form-control" placeholder="Promo code">
-          <div class="input-group-append">
-            <button type="submit" class="btn btn-secondary">Redeem</button>
-          </div>
-        </div>
-      </form> -->
-    </div>
 
     <div class="col-md-6 order-md-1">
       <h4 class="mb-3">Student Info</h4>
@@ -109,7 +101,6 @@
             <label for="firstName">Student Name {{sid}}</label>
             <input type="text" ng-model="name" class="form-control" id="firstName" placeholder="" value="">
           </div>
-        </div>
 
         <hr class="mb-4">
         <button class="btn btn-primary btn-lg btn-block" onclick="reset()">Reset</button>
