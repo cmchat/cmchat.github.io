@@ -1,0 +1,131 @@
+<!doctype html>
+<html ng-app="v3App" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">    
+    <meta name="generator" content="Jekyll v4.1.1">
+    <title>Coding Minds Feedback</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+    <script type="text/javascript" src="https://cdn.rawgit.com/JustMaier/6ef7788709d675bd8230/raw/3d39d50e66d8d77e05656ed7dd09298be7e86f1f/ngClickCopy.js"></script>
+    <script src="control.js"></script>
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/checkout/">
+
+    <!-- Bootstrap core CSS -->
+    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+    <!-- Custom styles for this template -->
+    <link href="form-validation.css" rel="stylesheet">
+  </head>
+  <body class="bg-light" ng-controller="MessageController">
+    <div class="container">
+  <div class="py-5 text-center">
+    <img class="d-block mx-auto mb-4" src="../assets/brand/bootstrap-solid.svg" alt="" width="72" height="72">
+    <h2>Feedback</h2>
+    <p class="lead">Detailed, Fast, Encouraging</p>
+  </div>
+
+  <div class="row">
+    
+    <div class="col-md-6 order-md-2 mb-6">
+      <h4 class="d-flex justify-content-between align-items-center mb-3">
+        <span class="text-muted">Messages (Click to Copy)</span>
+        <!-- <span class="badge badge-secondary badge-pill">3</span> -->
+     </h4>
+      <ul class="list-group mb-3">
+        <li class="list-group-item d-flex justify-content-between lh-condensed">
+          <div>
+            <h6 class="my-0">Step 0 (new student) </h6>
+            <a href="" ng-click-copy="{{name}}家长，您好！我是教研主任张老师，很高兴认识您！我的工作是和孙老师跟授课老师一起评估并反馈{{name}}上半学期的学习情况。">
+            <small class="text-muted">{{name}}家长，您好！我是教研主任张老师，很高兴认识您！我的工作是和孙老师跟授课老师一起评估并反馈{{name}}上半学期的学习情况。</small>
+          </a>
+          </div>
+          <!-- <span class="badge badge-secondary badge-pill">3</span> -->
+       </li>
+        <li class="list-group-item d-flex justify-content-between lh-condensed">
+          <div>
+            <h6 class="my-0">Step 0 (old student) </h6>
+            <a href="" ng-click-copy="{{name}}家长，您好！我是教研主任张老师，很荣幸能再次和孙老师跟授课老师一起为您评估并反馈{{name}}上半学期的学习情况。">
+            <small class="text-muted">{{name}}家长，您好！我是教研主任张老师，很荣幸能再次和孙老师跟授课老师一起为您评估并反馈{{name}}上半学期的学习情况。</small>
+          </a>
+          </div>
+          <!-- <span class="text-muted">$12</span> -->  
+        </li>
+        <li class="list-group-item d-flex justify-content-between lh-condensed">
+          <div>
+            <h6 class="my-0">Step 1 (new student) </h6>
+            <a href="" ng-click-copy="{{name}}这半学期表现得很不错，授课老师反馈{{name}}探索求知欲强，理解能力也不错，上课与老师的交流也很积极。虽然一开始{{name}}对    编程没有什么基础，但是{{name}}悟性很高，上手得很快，课堂练习也会按时完成。下面的8周除了完成剩余的高级知识点外，我们也会在第10节课左右开始带{{name}}进行个人项目的开发。等课程结束的时候我会再给您对项目和整个学期的课程进行反馈总结。">
+            <small class="text-muted">{{name}}这半学期表现得很不错，授课老师反馈{{name}}探索求知欲强，理解能力也不错，上课与老师的交流也很积极。虽然一开始{{name}}对    编程没有什么基础，但是{{name}}悟性很高，上手得很快，课堂练习也会按时完成。下面的8周除了完成剩余的高级知识点外，我们也会在第10节课左右开始带{{name}}进行个人项目的开发。等课程结束的时候我会再给您对项目和整个学期的课程进行反馈总结。</small>
+          </a>
+          </div>
+          <!-- <span class="text-muted">$12</span> -->  
+        </li>
+        <li class="list-group-item d-flex justify-content-between lh-condensed">
+          <div>
+            <h6 class="my-0">Step 1 (old student) </h6>
+            <a href="" ng-click-copy="{{name}}这半学期表现得非常不错，授课老师反映{{name}}上课态度很认真，遇到问题会及时提问，课堂练习也会按时完成。接下来的8周{{name}}除了完成剩余的高级知识点外，我们也会在第10节课左右开始带{{name}}进行个人项目的开发。课程结束的时候我会再给您对项目和整个学期的课程进行反馈总结。">
+            <small class="text-muted">{{name}}这半学期表现得非常不错，授课老师反映{{name}}上课态度很认真，遇到问题会及时提问，课堂练习也会按时完成。接下来的8周{{name}}除了完成剩余的高级知识点外，我们也会在第10节课左右开始带{{name}}进行个人项目的开发。课程结束的时候我会再给您对项目和整个学期的课程进行反馈总结。</small>
+          </a>
+          </div>
+          <!-- <span class="text-muted">$5</span> -->
+        </li>
+        <li class="list-group-item d-flex justify-content-between lh-condensed">
+          <div>
+            <h6 class="my-0">Step USACO</h6>
+            <a href="" ng-click-copy="{{name}}这学期表现的很好，授课老师对{{name}}的印象挺不错，认为{{name}}上课态度很认真，遇到问题会及时主动提问，也会经常练习不熟练的USACO编程问题。接下来的8周{{name}}除了完成剩余的高级知识点外，授课老师也会多进行一些针对USACO竞赛题目的模拟练习，等课程结束的时候我会再给您对{{name}}整个学期的课程进行反馈总结。">
+            <small class="text-muted">{{name}}这学期表现的很好，授课老师对{{name}}的印象挺不错，认为{{name}}上课态度很认真，遇到问题会及时主动提问，也会经常练习不熟练的USACO编程问题。接下来的8周{{name}}除了完成剩余的高级知识点外，授课老师也会多进行一些针对USACO竞赛题目的模拟练习，等课程结束的时候我会再给您对{{name}}整个学期的课程进行反馈总结。</small>
+            </a>
+          </div>
+          <!-- <span class="text-muted">$5</span> -->
+        </li>
+        <li class="list-group-item d-flex justify-content-between bg-light">
+          <div class="text-success">
+            <h6 class="my-0">Final Step</h6>
+            <a href="" ng-click-copy="您如果对{{name}}的学习和我们的工作有什么反馈，请您随时与我们联系，感谢您对我们工作的支持！"><small>您如果对{{name}}的学习和我们的工作有什么反馈，请您随时与我们联系，感谢您对我们工作的支持！</small></a>
+          </div>    		  
+        </li>
+     </li>
+    </div>
+
+    <div class="col-md-6 order-md-1">
+      <h4 class="mb-3">Student Info</h4>
+      <form class="needs-validation" novalidate>
+        <div class="row">
+          <div class="col-md-6 mb-3">
+            <label for="firstName">Student Name {{sid}}</label>
+            <input type="text" ng-model="name" class="form-control" id="firstName" placeholder="" value="">
+          </div>
+        </div>
+
+        <hr class="mb-4">
+        <button class="btn btn-primary btn-lg btn-block" onclick="reset()">Reset</button>
+      </form>
+    </div>
+  </div>
+
+  <footer class="my-5 pt-5 text-muted text-center text-small">
+    <p class="mb-1">&copy; 2020 Coding Minds, Inc.</p>    
+  </footer>
+</div>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+      <script>window.jQuery || document.write('<script src="../assets/js/vendor/jquery.slim.min.js"><\/script>')</script><script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="form-validation.js"></script>        
+        
+  </body>
+</html>
