@@ -8,7 +8,8 @@
     <title>Coding Minds Feedback</title>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
     <script src="https://cdn.rawgit.com/zenorocha/clipboard.js/master/dist/clipboard.min.js"></script>
-    <script type="text/javascript" src="https://cdn.rawgit.com/JustMaier/6ef7788709d675bd8230/raw/3d39d50e66d8d77e05656ed7dd09298be7e86f1f/ngClickCopy.js"></script>
+    <!-- <script type="text/javascript" src="https://cdn.rawgit.com/JustMaier/6ef7788709d675bd8230/raw/3d39d50e66d8d77e05656ed7dd09298be7e86f1f/ngClickCopy.js"></script> -->
+    <script src="dist/ngclipboard.min.js"></script>
     <script src="control.js"></script>
     <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/checkout/">
 
@@ -53,7 +54,7 @@
         <li class="list-group-item d-flex justify-content-between lh-condensed">
           <div>
             <h6 class="my-0">Step 0</h6>
-            <a href="" ng-click-copy="{{name}}家长您好！我是教研主任张老师，很荣幸能和孙老师跟授课老师一起为您评估{{name}}这学期的学习情况，并且给您建议{{name}}下一个阶段的学习安排。">
+            <a href="" ngclipboard data-clipboard-action="copy" data-clipboard-text="{{name}}家长您好！我是教研主任张老师，很荣幸能和孙老师跟授课老师一起为您评估{{name}}这学期的学习情况，并且给您建议{{name}}下一个阶段的学习安排。">
             <small class="text-muted">{{name}}家长您好！我是教研主任张老师，很荣幸能和孙老师跟授课老师一起为您评估{{name}}这学期的学习情况，并且给您建议{{name}}下一个阶段的学习安排。</small>
           </a>
           </div>
@@ -62,7 +63,7 @@
         <li class="list-group-item d-flex justify-content-between lh-condensed">
           <div>
             <h6 class="my-0">Step 0 (normal student)</h6>
-            <a href="" ng-click-copy="{{name}}家长您好！我们即将结束{{name}}这学期的      课程，因此我们正在安排{{name}}下一步的编程之旅。我们建议{{name}}下阶段可以开始{{nextCourse}}课程，课程内容为：     。下一个阶段的课程我们可以在下周原时间开始，如果需要调整课程时间或者有其他问题的话，请随时在群里和我们联系沟通。">
+            <a href="" ngclipboard data-clipboard-action="copy" data-clipboard-text="{{name}}家长您好！我们即将结束{{name}}这学期的      课程，因此我们正在安排{{name}}下一步的编程之旅。我们建议{{name}}下阶段可以开始{{nextCourse}}课程，课程内容为：     。下一个阶段的课程我们可以在下周原时间开始，如果需要调整课程时间或者有其他问题的话，请随时在群里和我们联系沟通。">
             <small class="text-muted">{{name}}家长您好！我们即将结束{{name}}这学期的      课程，因此我们正在安排{{name}}下一步的编程之旅。我们建议{{name}}下阶段可以开始{{nextCourse}}课程，课程内容为：     。下一个阶段的课程我们可以在下周原时间开始，如果需要调整课程时间或者有其他问题的话，请随时在群里和我们联系沟通。</small>
           </a>
           </div>
@@ -71,7 +72,7 @@
         <li class="list-group-item d-flex justify-content-between lh-condensed">
           <div>
             <h6 class="my-0">Step 0 (project student)</h6>
-            <a href="" ng-click-copy="{{name}}家长您好！我们即将结束{{name}}这学期的      课程，因此我们正在安排{{name}}下一步的编程之旅。我们建议{{name}}在我们下一级别的课程中继续这个主题：     。下一个阶段的课程我们可以在下周原时间开始，如果需要调整课程时间或者有其他问题的话，请随时在群里和我们联系沟通。">
+            <a href="" ngclipboard data-clipboard-action="copy" data-clipboard-text="{{name}}家长您好！我们即将结束{{name}}这学期的      课程，因此我们正在安排{{name}}下一步的编程之旅。我们建议{{name}}在我们下一级别的课程中继续这个主题：     。下一个阶段的课程我们可以在下周原时间开始，如果需要调整课程时间或者有其他问题的话，请随时在群里和我们联系沟通。">
             <small class="text-muted">{{name}}家长您好！我们即将结束{{name}}这学期的      课程，因此我们正在安排{{name}}下一步的编程之旅。我们建议{{name}}在我们下一级别的课程中继续这个主题：     。下一个阶段的课程我们可以在下周原时间开始，如果需要调整课程时间或者有其他问题的话，请随时在群里和我们联系沟通。</small>
           </a>
           </div>
@@ -80,7 +81,7 @@
         <li class="list-group-item d-flex justify-content-between lh-condensed">
           <div>
             <h6 class="my-0">Step 0</h6>
-            <a href="" ng-click-copy="{{name}}家长您好！今天将是{{name}}这学期的    课程的最后一节课程，我们这两天会在群里给您发课程的反馈总结与下阶段的课程安排，请您稍等。">
+            <a href="" ngclipboard data-clipboard-action="copy" data-clipboard-text="{{name}}家长您好！今天将是{{name}}这学期的    课程的最后一节课程，我们这两天会在群里给您发课程的反馈总结与下阶段的课程安排，请您稍等。">
             <small class="text-muted">{{name}}家长您好！今天将是{{name}}这学期的    课程的最后一节课程，我们这两天会在群里给您发课程的反馈总结与下阶段的课程安排，请您稍等。</small>
           </a>
           </div>
@@ -89,7 +90,7 @@
         <li class="list-group-item d-flex justify-content-between lh-condensed">
           <div>
             <h6 class="my-0">Step 1</h6>
-            <a href="" ng-click-copy="{{name}}过去这学期的学习总结我发在这里，您有空可以看一下：{{summaryURL}}">
+            <a href="" ngclipboard data-clipboard-action="copy" data-clipboard-text="{{name}}过去这学期的学习总结我发在这里，您有空可以看一下：{{summaryURL}}">
             <small class="text-muted">{{name}}过去这学期的学习总结我发在这里，您有空可以看一下：{{summaryURL}}</small>
           </a>
           </div>
@@ -98,7 +99,7 @@
         <li class="list-group-item d-flex justify-content-between lh-condensed">
           <div>
             <h6 class="my-0">Step 2</h6>
-            <a href="" ng-click-copy="{{name}}的课程项目我发在这里，您也可以看一下：{{projectURL}}">
+            <a href="" ngclipboard data-clipboard-action="copy" data-clipboard-text="{{name}}的课程项目我发在这里，您也可以看一下：{{projectURL}}">
             <small class="text-muted">{{name}}的课程项目我发在这里，您也可以看一下：{{projectURL}}</small>
           </a>
           </div>
@@ -107,56 +108,56 @@
         <li class="list-group-item d-flex justify-content-between lh-condensed">
           <div class="text-success">
             <h6 class="my-0">Step 3（New Student）</h6>
-            <a href="" ng-click-copy="总的来说，{{name}}这学期表现的很好，中间我和授课老师聊过几次，老师对{{name}}的反馈非常好，开始{{name}}对编程没有基础，但是{{name}}学的很快编程能力提升很高，尤其是最后的项目，大部分代码都是由{{name}}自己独立思考完成，很不错！"><small>总的来说，{{name}}这学期表现的很好，中间我和授课老师聊过几次，老师对{{name}}的反馈非常好，开始{{name}}对编程没有基础，但是{{name}}学的很快编程能力提升很高，尤其是最后的项目，大部分代码都是由{{name}}自己独立思考完成，很不错！</small></a>
+            <a href="" ngclipboard data-clipboard-action="copy" data-clipboard-text="总的来说，{{name}}这学期表现的很好，中间我和授课老师聊过几次，老师对{{name}}的反馈非常好，开始{{name}}对编程没有基础，但是{{name}}学的很快编程能力提升很高，尤其是最后的项目，大部分代码都是由{{name}}自己独立思考完成，很不错！"><small>总的来说，{{name}}这学期表现的很好，中间我和授课老师聊过几次，老师对{{name}}的反馈非常好，开始{{name}}对编程没有基础，但是{{name}}学的很快编程能力提升很高，尤其是最后的项目，大部分代码都是由{{name}}自己独立思考完成，很不错！</small></a>
           </div>
           <!-- <span class="text-muted">$5</span> -->          
         </li>
         <li class="list-group-item d-flex justify-content-between lh-condensed">
           <div class="text-success">
             <h6 class="my-0">Step 3 (old student) </h6>
-            <a href="" ng-click-copy="{{name}}这学期表现的很好，授课老师对{{name}}的印象非常深刻，认为{{name}}编程能力很强，并且独立处理难题的能力很高，尤其是最后的项目完成的非常不错！"><small>{{name}}这学期表现的很好，授课老师对{{name}}的印象非常深刻，认为{{name}}编程能力很强，并且独立处理难题的能力很高，尤其是最后的项目完成的非常不错！</small></a>
+            <a href="" ngclipboard data-clipboard-action="copy" data-clipboard-text="{{name}}这学期表现的很好，授课老师对{{name}}的印象非常深刻，认为{{name}}编程能力很强，并且独立处理难题的能力很高，尤其是最后的项目完成的非常不错！"><small>{{name}}这学期表现的很好，授课老师对{{name}}的印象非常深刻，认为{{name}}编程能力很强，并且独立处理难题的能力很高，尤其是最后的项目完成的非常不错！</small></a>
           </div>
           <!-- <span class="text-muted">$5</span> -->          
         </li>
         <li class="list-group-item d-flex justify-content-between lh-condensed">
           <div class="text-success">
             <h6 class="my-0">Step 3 (old student) </h6>
-            <a href="" ng-click-copy="{{name}}这学期表现的很不错，授课老师反映{{name}}对待编程课程非常认真专注，经过这个学期的勤奋学习，对    编程有了更深入的理解。这学期{{name}}在各方面进步都非常大，不仅回答问题时更加灵活自如，编写程序时也是充满自信，我们都对{{name}}接下来的编程生涯很有信心！"><small>{{name}}这学期表现的很不错，授课老师反映{{name}}对待编程课程非常认真专注，经过这个学期的勤奋学习，对    编程有了更深入的理解。这学期{{name}}在各方面进步都非常大，不仅回答问题时更加灵活自如，编写程序时也是充满自信，我们都对{{name}}接下来的编程生涯很有信心！</small></a>
+            <a href="" ngclipboard data-clipboard-action="copy" data-clipboard-text="{{name}}这学期表现的很不错，授课老师反映{{name}}对待编程课程非常认真专注，经过这个学期的勤奋学习，对    编程有了更深入的理解。这学期{{name}}在各方面进步都非常大，不仅回答问题时更加灵活自如，编写程序时也是充满自信，我们都对{{name}}接下来的编程生涯很有信心！"><small>{{name}}这学期表现的很不错，授课老师反映{{name}}对待编程课程非常认真专注，经过这个学期的勤奋学习，对    编程有了更深入的理解。这学期{{name}}在各方面进步都非常大，不仅回答问题时更加灵活自如，编写程序时也是充满自信，我们都对{{name}}接下来的编程生涯很有信心！</small></a>
           </div>
 		      <!-- <span class="text-muted">$5</span> -->
         </li>
         <li class="list-group-item d-flex justify-content-between lh-condensed">
           <div class="text-success">
             <h6 class="my-0">Step 3 (old student)</h6>
-            <a href="" ng-click-copy="总的来说，{{name}}这学期表现的很好，开始{{name}}对内容不是很熟悉，但是后面很快就上手了，尤其是最后的项目，很有idea而且开发的很快。"><small>总的来说，{{name}}这学期表现的很好，开始{{name}}对内容不是很熟悉，但是后面很快就上手了，尤其是最后的项目，很有idea而且开发的很快。</small></a>
+            <a href="" ngclipboard data-clipboard-action="copy" data-clipboard-text="总的来说，{{name}}这学期表现的很好，开始{{name}}对内容不是很熟悉，但是后面很快就上手了，尤其是最后的项目，很有idea而且开发的很快。"><small>总的来说，{{name}}这学期表现的很好，开始{{name}}对内容不是很熟悉，但是后面很快就上手了，尤其是最后的项目，很有idea而且开发的很快。</small></a>
           </div>  
 		      <!-- <span class="text-muted">$5</span> -->
         </li>
 		    <li class="list-group-item d-flex justify-content-between lh-condensed">
           <div class="text-success">
             <h6 class="my-0">Step 3 (old student)</h6>
-            <a href="" ng-click-copy="{{name}}这学期表现的很好，我跟授课老师沟通过几次，老师反映{{name}}上课非常积极主动，编程能力很强，并且{{name}}这学期进步的非常快，最后的项目不仅完成度很高还添加了很多自己的创意idea，课程演讲也介绍的很清楚，我们都对{{name}}接下来的编程生涯很有信心！"><small>{{name}}这学期表现的很好，我跟授课老师沟通过几次，老师反映{{name}}上课非常积极主动，编程能力很强，并且{{name}}这学期进步的非常快，最后的项目不仅完成度很高还添加了很多自己的创意idea，课程演讲也介绍的很清楚，我们都对{{name}}接下来的编程生涯很有信心！</small></a>
+            <a href="" ngclipboard data-clipboard-action="copy" data-clipboard-text="{{name}}这学期表现的很好，我跟授课老师沟通过几次，老师反映{{name}}上课非常积极主动，编程能力很强，并且{{name}}这学期进步的非常快，最后的项目不仅完成度很高还添加了很多自己的创意idea，课程演讲也介绍的很清楚，我们都对{{name}}接下来的编程生涯很有信心！"><small>{{name}}这学期表现的很好，我跟授课老师沟通过几次，老师反映{{name}}上课非常积极主动，编程能力很强，并且{{name}}这学期进步的非常快，最后的项目不仅完成度很高还添加了很多自己的创意idea，课程演讲也介绍的很清楚，我们都对{{name}}接下来的编程生涯很有信心！</small></a>
           </div>
           <!-- <span class="text-muted">$5</span> -->
         </li>
         <li class="list-group-item d-flex justify-content-between lh-condensed">
           <div class="text-success">
             <h6 class="my-0">Step 3 (old student)</h6>
-            <a href="" ng-click-copy="{{name}}表现得挺不错，授课老师认为{{name}}不仅对编程课程富有热情，而且创造力和动手能力也都很不错，这学期编程水平进步得非常快。{{name}}还会结合自己的现实生活经历和兴趣爱好来编程设计课程项目，做项目很有灵感，我们都对{{name}}接下来的编程生涯很有信心！"><small>{{name}}表现得挺不错，授课老师认为{{name}}不仅对编程课程富有热情，而且创造力和动手能力也都很不错，这学期编程水平进步得非常快。{{name}}还会结合自己的现实生活经历和兴趣爱好来编程设计课程项目，做项目很有灵感，我们都对{{name}}接下来的编程生涯很有信心！</small></a>
+            <a href="" ngclipboard data-clipboard-action="copy" data-clipboard-text="{{name}}表现得挺不错，授课老师认为{{name}}不仅对编程课程富有热情，而且创造力和动手能力也都很不错，这学期编程水平进步得非常快。{{name}}还会结合自己的现实生活经历和兴趣爱好来编程设计课程项目，做项目很有灵感，我们都对{{name}}接下来的编程生涯很有信心！"><small>{{name}}表现得挺不错，授课老师认为{{name}}不仅对编程课程富有热情，而且创造力和动手能力也都很不错，这学期编程水平进步得非常快。{{name}}还会结合自己的现实生活经历和兴趣爱好来编程设计课程项目，做项目很有灵感，我们都对{{name}}接下来的编程生涯很有信心！</small></a>
           </div>
           <!-- <span class="text-muted">$5</span> -->
         </li>
         <li class="list-group-item d-flex justify-content-between lh-condensed">
           <div class="text-success">
             <h6 class="my-0">Step 3 (old student)</h6>
-            <a href="" ng-click-copy="授课老师反映{{name}}上课非常积极主动，不仅经常提问，遇到难题也会努力自己研究克服，尤其是最后的项目的完成度非常高，我们都对{{name}}接下来的编程生涯很有信心!"><small>授课老师反映{{name}}上课非常积极主动，不仅经常提问，遇到难题也会努力自己研究克服，尤其是最后的项目的完成度非常高，我们都对{{name}}接下来的编程生涯很有信心!</small></a>
+            <a href="" ngclipboard data-clipboard-action="copy" data-clipboard-text="授课老师反映{{name}}上课非常积极主动，不仅经常提问，遇到难题也会努力自己研究克服，尤其是最后的项目的完成度非常高，我们都对{{name}}接下来的编程生涯很有信心!"><small>授课老师反映{{name}}上课非常积极主动，不仅经常提问，遇到难题也会努力自己研究克服，尤其是最后的项目的完成度非常高，我们都对{{name}}接下来的编程生涯很有信心!</small></a>
           </div>
           <!-- <span class="text-muted">$5</span> -->
         </li>
         <li class="list-group-item d-flex justify-content-between lh-condensed">
           <div>
             <h6 class="my-0">Step USACO</h6>
-            <a href="" ng-click-copy="{{name}}这学期表现的很不错，授课老师反映{{name}}上课非常积极认真，遇到难题会主动提问努力解决，通过本学期不断的复习与编程训练，{{name}}对USACO             级别考试准备中所遇到的难题理解得不错，编程能力也有相当明显的进步！">
+            <a href="" ngclipboard data-clipboard-action="copy" data-clipboard-text="{{name}}这学期表现的很不错，授课老师反映{{name}}上课非常积极认真，遇到难题会主动提问努力解决，通过本学期不断的复习与编程训练，{{name}}对USACO             级别考试准备中所遇到的难题理解得不错，编程能力也有相当明显的进步！">
             <small class="text-muted">{{name}}这学期表现的很不错，授课老师反映{{name}}上课非常积极认真，遇到难题会主动提问努力解决，通过本学期不断的复习与编程训练，{{name}}对USACO             级别考试准备中所遇到的难题理解得不错，编程能力也有相当明显的进步！</small>
             </a>
           </div>
@@ -165,7 +166,7 @@
         <li class="list-group-item d-flex justify-content-between lh-condensed">
           <div>
             <h6 class="my-0">Step USACO</h6>
-            <a href="" ng-click-copy="{{name}}这学期表现的很好，授课老师对{{name}}的印象挺不错，认为{{name}}上课非常认真，不仅勤于提问，也会经常练习不熟练的USACO编程问题，独立处理难题的能力提高了不少，编程能力有相当明显的进步，我们都对{{name}}接下来的编程生涯很有信心!">
+            <a href="" ngclipboard data-clipboard-action="copy" data-clipboard-text="{{name}}这学期表现的很好，授课老师对{{name}}的印象挺不错，认为{{name}}上课非常认真，不仅勤于提问，也会经常练习不熟练的USACO编程问题，独立处理难题的能力提高了不少，编程能力有相当明显的进步，我们都对{{name}}接下来的编程生涯很有信心!">
             <small class="text-muted">{{name}}这学期表现的很好，授课老师对{{name}}的印象挺不错，认为{{name}}上课非常认真，不仅勤于提问，也会经常练习不熟练的USACO编程问题，独立处理难题的能力提高了不少，编程能力有相当明显的进步，我们都对{{name}}接下来的编程生涯很有信心!</small>
             </a>
           </div>
@@ -174,7 +175,7 @@
         <li class="list-group-item d-flex justify-content-between lh-condensed">
           <div>
             <h6 class="my-0">Step USACO</h6>
-            <a href="" ng-click-copy="{{name}}这学期表现得很出色，授课老师反映{{name}}是一位模范学生，编程基础挺扎实。经过这个学期的勤奋学习，{{name}}对于USACO竞赛有了更深入的理解，这学期在各方面进步都非常大，不仅对于算法的运用得心应手，解决问题的能力进步了不少，编写程序时也是充满自信，更加灵活自如。">
+            <a href="" ngclipboard data-clipboard-action="copy" data-clipboard-text="{{name}}这学期表现得很出色，授课老师反映{{name}}是一位模范学生，编程基础挺扎实。经过这个学期的勤奋学习，{{name}}对于USACO竞赛有了更深入的理解，这学期在各方面进步都非常大，不仅对于算法的运用得心应手，解决问题的能力进步了不少，编写程序时也是充满自信，更加灵活自如。">
             <small class="text-muted">{{name}}这学期表现得很出色，授课老师反映{{name}}是一位模范学生，编程基础挺扎实。经过这个学期的勤奋学习，{{name}}对于USACO竞赛有了更深入的理解，这学期在各方面进步都非常大，不仅对于算法的运用得心应手，解决问题的能力进步了不少，编写程序时也是充满自信，更加灵活自如。</small>
             </a>
           </div>
@@ -183,7 +184,7 @@
         <li class="list-group-item d-flex justify-content-between bg-light">
           <div class="text-success">
             <h6 class="my-0">Final Step</h6>
-            <a href="" ng-click-copy="您如果对{{name}}的学习和我们的工作有什么反馈，请您随时与我们联系，感谢您对我们工作的支持！"><small>您如果对{{name}}的学习和我们的工作有什么反馈，请您随时与我们联系，感谢您对我们工作的支持！</small></a>
+            <a href="" ngclipboard data-clipboard-action="copy" data-clipboard-text="您如果对{{name}}的学习和我们的工作有什么反馈，请您随时与我们联系，感谢您对我们工作的支持！"><small>您如果对{{name}}的学习和我们的工作有什么反馈，请您随时与我们联系，感谢您对我们工作的支持！</small></a>
           </div>    		  
         </li>
         <!-- <span class="text-muted">$5</span> -->
@@ -191,7 +192,7 @@
       <li class="list-group-item d-flex justify-content-between lh-condensed">
         <div>
           <h6 class="my-0">English Step 0</h6>
-          <a href="" ng-click-copy="Good     ,{{name}}'s parents! This is Miss Zhang, director of Teaching and Research of Coding Minds, nice to meet you! My job is to evaluate {{name}}'s learning situation this semester with Dr. Sun, and suggest {{name}}'s next stage of learning arrangements.">
+          <a href="" ngclipboard data-clipboard-action="copy" data-clipboard-text="Good     ,{{name}}'s parents! This is Miss Zhang, director of Teaching and Research of Coding Minds, nice to meet you! My job is to evaluate {{name}}'s learning situation this semester with Dr. Sun, and suggest {{name}}'s next stage of learning arrangements.">
           <small class="text-muted">Good     ,{{name}}'s parents! This is Miss Zhang, director of Teaching and Research of Coding Minds, nice to meet you! My job is to evaluate {{name}}'s learning situation this semester with Dr. Sun, and suggest {{name}}'s next stage of learning arrangements.</small>
         </a>
         </div>
@@ -200,7 +201,7 @@
       <li class="list-group-item d-flex justify-content-between lh-condensed">
         <div>
           <h6 class="my-0">English Step 1</h6>
-          <a href="" ng-click-copy="This is {{name}}'s study summary for the past semester, please review: {{summaryURL}}">
+          <a href="" ngclipboard data-clipboard-action="copy" data-clipboard-text="This is {{name}}'s study summary for the past semester, please review: {{summaryURL}}">
           <small class="text-muted">This is {{name}}'s study summary for the past semester, please review: {{summaryURL}}</small>
           </a>
         </div>
@@ -209,7 +210,7 @@
       <li class="list-group-item d-flex justify-content-between lh-condensed">
         <div>
           <h6 class="my-0">English Step 2</h6>
-          <a href="" ng-click-copy="This is {{name}}'s final presentation, please review：{{projectURL}}">
+          <a href="" ngclipboard data-clipboard-action="copy" data-clipboard-text="This is {{name}}'s final presentation, please review：{{projectURL}}">
           <small class="text-muted">This is {{name}}'s final presentation, please review：{{projectURL}}</small>
           </a>
         </div>
@@ -218,7 +219,7 @@
         <li class="list-group-item d-flex justify-content-between lh-condensed">
           <div>
             <h6 class="my-0">English Step 3</h6>
-            <a href="" ng-click-copy="{{name}} performed very well this semester. The instructor was impressed with {{name}}'s performance. We believed that {{name}} has strong programming skills which helps {{name}} understands the course curriculum in a short time. Moreover, {{name}} has a great ability to deal with difficult problems independently. {{name}}'s final project has a high percentage of completion. {{name}} has made great progress with creating the project design and improving the project code. Good job, {{name}}!">
+            <a href="" ngclipboard data-clipboard-action="copy" data-clipboard-text="{{name}} performed very well this semester. The instructor was impressed with {{name}}'s performance. We believed that {{name}} has strong programming skills which helps {{name}} understands the course curriculum in a short time. Moreover, {{name}} has a great ability to deal with difficult problems independently. {{name}}'s final project has a high percentage of completion. {{name}} has made great progress with creating the project design and improving the project code. Good job, {{name}}!">
             <small class="text-muted">{{name}} performed very well this semester. The instructor was impressed with {{name}}'s performance. We believed that {{name}} has strong programming skills which helps {{name}} understands the course curriculum in a short time. Moreover, {{name}} has a great ability to deal with difficult problems independently. {{name}}'s final project has a high percentage of completion. {{name}} has made great progress with creating the project design and improving the project code. Good job, {{name}}!</small>
             </a>
           </div>
@@ -227,7 +228,7 @@
       <li class="list-group-item d-flex justify-content-between bg-light">
         <div class="text-success">
           <h6 class="my-0">English Final Step</h6>
-          <a href="" ng-click-copy="If you have any feedback on {{name}}'s study or our work, please let us know. Thank you!"><small>If you have any feedback on {{name}}'s study or our work, please let us know. Thank you!</small></a>
+          <a href="" ngclipboard data-clipboard-action="copy" data-clipboard-text="If you have any feedback on {{name}}'s study or our work, please let us know. Thank you!"><small>If you have any feedback on {{name}}'s study or our work, please let us know. Thank you!</small></a>
         </div>    		  
       </li>
         <!-- <li class="list-group-item d-flex justify-content-between">
