@@ -1,4 +1,4 @@
-angular.module('v3App', [])
+angular.module('v3App', ['ngClickCopy'])
   .config(function($sceProvider) {
     $sceProvider.enabled(false);    
   })
