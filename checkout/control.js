@@ -1,4 +1,4 @@
-angular.module('v3App', [])
+angular.module('v3App', ['ngclipboard'])
   .config(function($sceProvider) {
     $sceProvider.enabled(false);    
   })
@@ -6,12 +6,12 @@ angular.module('v3App', [])
     
     var url = $location.$$absUrl;
     var url = new URL(url);
-    var stuName = url.searchParams.get("name");
-    var studentId = url.searchParams.get("studentId");
-    var courseId = url.searchParams.get("courseId");
-    var projectUrl = url.searchParams.get("projectUrl");
-    var nextCourse = url.searchParams.get("nextCourse");    
-    var sid = url.searchParams.get("sid");
+    var stuName = url.searchParams?.get("name");
+    var studentId = url.searchParams?.get("studentId");
+    var courseId = url.searchParams?.get("courseId");
+    var projectUrl = url.searchParams?.get("projectUrl");
+    var nextCourse = url.searchParams?.get("nextCourse");    
+    var sid = url.searchParams?.get("sid");
 
     console.log(stuName);
     console.log(studentId);
