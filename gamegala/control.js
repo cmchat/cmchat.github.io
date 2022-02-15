@@ -1,4 +1,4 @@
-angular.module('v3App', ['ngClickCopy'])
+angular.module('v3App', ['ngclipboard'])
   .config(function($sceProvider) {
     $sceProvider.enabled(false);    
   })
