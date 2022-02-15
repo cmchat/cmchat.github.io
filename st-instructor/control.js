@@ -1,4 +1,4 @@
-angular.module('v3App', ['ngClickCopy'])
+angular.module('v3App', ['ngclipboard'])
   .config(function($sceProvider) {
     $sceProvider.enabled(false);    
   })
@@ -8,27 +8,27 @@ angular.module('v3App', ['ngClickCopy'])
     var url = new URL(url);
     var stuName = url.searchParams.get("name");
     var studentId = url.searchParams.get("studentId");
-    var projectUrl = url.searchParams.get("projectUrl");
     var courseId = url.searchParams.get("courseId");
-    var instructorName = url.searchParams.get("instructorName");
-    var nextCourse = url.searchParams.get("nextCourse");    
-    var sid = url.searchParams.get("sid");
+    var projectUrl = url.searchParams.get("projectUrl");
+    var nextCourse = url.searchParams.get("nextCourse");
 
     console.log(stuName);
     console.log(studentId);
     console.log(courseId);
     console.log(projectUrl);
     console.log(nextCourse);
-    console.log(sid);
 
     if (nextCourse != null) {
     	$scope.nextCourse = nextCourse;
     }
 
-    $scope.name = stuName;    
-    $scope.instructorName = instructorName;
-    
+    $scope.name = stuName;
+    $scope.summaryURL = "https://codingmindsacademy.com/feedback_ECv3.html?studentId=" + studentId + "&courseId=" + courseId;
+    $scope.projectURL = projectUrl;
+
   	$scope.reset = function () {
+      $scope.name = "";
+      $scope.projectURL = "";
   		console.log("clicked");
   	}
 
