@@ -6,8 +6,12 @@
     <meta name="description" content="">    
     <meta name="generator" content="Jekyll v4.1.1">
     <title>Coding Minds Feedback</title>
+
+    <!-- -->
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
-    <script type="text/javascript" src="https://cdn.rawgit.com/JustMaier/6ef7788709d675bd8230/raw/3d39d50e66d8d77e05656ed7dd09298be7e86f1f/ngClickCopy.js"></script>
+    <script src="https://cdn.rawgit.com/zenorocha/clipboard.js/master/dist/clipboard.min.js"></script>
+    <script src="dist/ngclipboard.min.js"></script>
+    
     <script src="control.js"></script>
     <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/checkout/">
 
@@ -52,7 +56,7 @@
         <li class="list-group-item d-flex justify-content-between lh-condensed">
           <div>
             <h6 class="my-0">Option 1</h6>
-            <a href="" ng-click-copy="{{name}}妈妈您好，老师已经帮{{name}}准备好参赛需要的Video Recording:
+            <a href="" ngclipboard data-clipboard-action="copy" data-clipboard-text="{{name}}妈妈您好，老师已经帮{{name}}准备好参赛需要的Video Recording:
 {{projectURL}}
 
 GameGala是全美为数不多K-12青少年编程竞赛，您可以在官网帮孩子报名: http://gamegala.org/
@@ -72,7 +76,7 @@ GameGala是全美为数不多K-12青少年编程竞赛，您可以在官网帮�
         <li class="list-group-item d-flex justify-content-between lh-condensed">
           <div>
             <h6 class="my-0">Option 2</h6>
-            <a href="" ng-click-copy="{{name}}妈妈您好，GameGala是全美为数不多K-12青少年编程竞赛，今年的截止报名日期是本周五12/18晚，{{name}}准备好参赛视频后，您可以让{{name}}或者您可以帮他在官网报名: http://gamegala.org/ 我们上课和{{name}}沟通过，{{name}}应该可以完成自己的项目作品视频录制和提交。请注意填好地址信息（接收证书或者奖品），另外有报名费$15。
+            <a href="" ngclipboard data-clipboard-action="copy" data-clipboard-text="{{name}}妈妈您好，GameGala是全美为数不多K-12青少年编程竞赛，今年的截止报名日期是本周五12/18晚，{{name}}准备好参赛视频后，您可以让{{name}}或者您可以帮他在官网报名: http://gamegala.org/ 我们上课和{{name}}沟通过，{{name}}应该可以完成自己的项目作品视频录制和提交。请注意填好地址信息（接收证书或者奖品），另外有报名费$15。
 
 Demo视频的要求时长大概是2分钟，主要需要演示一下自己的程序主题、如何运行、如何使用、如何完成的，简单扼要。如果{{name}}需要的话，我给您推荐两个可以录制demo的软件，https://www.loom.com/ 或者 https://obsproject.com/
 
@@ -92,7 +96,7 @@ Demo视频的要求时长大概是2分钟，主要需要演示一下自己的程
         <!-- <li class="list-group-item d-flex justify-content-between bg-light">
           <div class="text-success">
             <h6 class="my-0">Step 4</h6>
-            <a href="" ng-click-copy="总的来说，{{name}}这学期表现的很好，开始{{name}}对内容不是很熟悉，但是后面很快就上手了，尤其是最后的项目，很有idea而且开发的很快。"><small>总的来说，{{name}}这学期表现的很好，开始{{name}}对内容不是很熟悉，但是后面很快就上手了，尤其是最后的项目，很有idea而且开发的很快。</small></a>
+            <a href="" ngclipboard data-clipboard-action="copy" data-clipboard-text="总的来说，{{name}}这学期表现的很好，开始{{name}}对内容不是很熟悉，但是后面很快就上手了，尤其是最后的项目，很有idea而且开发的很快。"><small>总的来说，{{name}}这学期表现的很好，开始{{name}}对内容不是很熟悉，但是后面很快就上手了，尤其是最后的项目，很有idea而且开发的很快。</small></a>
           </div>          
         </li> -->
         <!-- <li class="list-group-item d-flex justify-content-between">
