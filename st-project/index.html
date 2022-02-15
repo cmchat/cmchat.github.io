@@ -6,8 +6,11 @@
     <meta name="description" content="">    
     <meta name="generator" content="Jekyll v4.1.1">
     <title>Coding Minds Feedback</title>
+
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
-    <script type="text/javascript" src="https://cdn.rawgit.com/JustMaier/6ef7788709d675bd8230/raw/3d39d50e66d8d77e05656ed7dd09298be7e86f1f/ngClickCopy.js"></script>
+    <script src="https://cdn.rawgit.com/zenorocha/clipboard.js/master/dist/clipboard.min.js"></script>
+    <script src="dist/ngclipboard.min.js"></script>
+
     <script src="control.js"></script>
     <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/checkout/">
 
@@ -52,7 +55,7 @@
         <!--li class="list-group-item d-flex justify-content-between lh-condensed">
           <div>
             <h6 class="my-0">Push催促开始</h6>
-            <a href="" ng-click-copy="{{name}}家长晚上好，这周我们接到几个竞赛通知，大多在几个月后举行。现在开始项目的话时间上正好可以有充足的时间完成开发，准备竞赛。尽早开始项目对后面的学术部分也有一定帮助，我们可以有足够的时间从容选择在题目上最对口{{name}}项目的会议期刊去发表论文，以获得最好的效果。如果{{name}}这周时间比较充裕，需要我们开始帮{{name}}排课的话请随时在群里通知我，我会尽快帮她安排。">
+            <a href="" ngclipboard data-clipboard-action="copy" data-clipboard-text="{{name}}家长晚上好，这周我们接到几个竞赛通知，大多在几个月后举行。现在开始项目的话时间上正好可以有充足的时间完成开发，准备竞赛。尽早开始项目对后面的学术部分也有一定帮助，我们可以有足够的时间从容选择在题目上最对口{{name}}项目的会议期刊去发表论文，以获得最好的效果。如果{{name}}这周时间比较充裕，需要我们开始帮{{name}}排课的话请随时在群里通知我，我会尽快帮她安排。">
             <small class="text-muted">{{name}}</small>
           </a>
           </div>
@@ -62,7 +65,7 @@
         <li class="list-group-item d-flex justify-content-between lh-condensed">
           <div>
             <h6 class="my-0">Push催促开始</h6>
-            <a href="" ng-click-copy="{{name}}家长晚上好，这周我们接到几个竞赛通知，大多在几个月后举行。现在开始项目的话时间上正好可以有充足的时间完成开发，准备竞赛。尽早开始项目对后面的学术部分也有一定帮助，我们可以有足够的时间从容选择在题目上最对口{{name}}项目的会议期刊去发表论文，以获得最好的效果。如果{{name}}这周时间比较充裕，需要我们开始帮{{name}}排课的话请随时在群里通知我，我会尽快帮她安排。">
+            <a href="" ngclipboard data-clipboard-action="copy" data-clipboard-text="{{name}}家长晚上好，这周我们接到几个竞赛通知，大多在几个月后举行。现在开始项目的话时间上正好可以有充足的时间完成开发，准备竞赛。尽早开始项目对后面的学术部分也有一定帮助，我们可以有足够的时间从容选择在题目上最对口{{name}}项目的会议期刊去发表论文，以获得最好的效果。如果{{name}}这周时间比较充裕，需要我们开始帮{{name}}排课的话请随时在群里通知我，我会尽快帮她安排。">
             <small class="text-muted">{{name}}家长晚上好，这周我们接到几个竞赛通知，大多在几个月后举行。现在开始项目的话时间上正好可以有充足的时间完成开发，准备竞赛。尽早开始项目对后面的学术部分也有一定帮助，我们可以有足够的时间从容选择在题目上最对口{{name}}项目的会议期刊去发表论文，以获得最好的效果。如果{{name}}这周时间比较充裕，需要我们开始帮{{name}}排课的话请随时在群里通知我，我会尽快帮她安排。</small>
           </a>
           </div>
@@ -71,7 +74,7 @@
         <li class="list-group-item d-flex justify-content-between lh-condensed">
           <div>
             <h6 class="my-0">团队介绍</h6>
-            <a href="" ng-click-copy="{{name}}家长您好，我来介绍一下我们科研团队的成员和具体分工。孙老师和李老师以及{{instructorName}}老师共同负责项目开发阶段的课程辅导。李老师负责辅导同学顺利完成项目发布，孙老师负责辅导论文和竞赛。班主任老师负责排课和沟通上课相关事宜。今天的第一次课由三位老师共同参加，期待和{{name}}共同开始项目开发和学习流程。">
+            <a href="" ngclipboard data-clipboard-action="copy" data-clipboard-text="{{name}}家长您好，我来介绍一下我们科研团队的成员和具体分工。孙老师和李老师以及{{instructorName}}老师共同负责项目开发阶段的课程辅导。李老师负责辅导同学顺利完成项目发布，孙老师负责辅导论文和竞赛。班主任老师负责排课和沟通上课相关事宜。今天的第一次课由三位老师共同参加，期待和{{name}}共同开始项目开发和学习流程。">
             <small class="text-muted">{{name}}家长您好，我来介绍一下我们科研团队的成员和具体分工。孙老师和我（科研主任李老师）以及{{instructorName}}老师共同负责项目开发阶段的课程辅导。李老师负责辅导同学顺利完成项目发布，孙老师负责辅导论文和竞赛。班主任老师负责排课和沟通上课相关事宜。今天的第一次课由三位老师共同参加，期待和{{name}}共同开始项目开发和学习流程。</small>
           </a>
           </div>
@@ -80,7 +83,7 @@
         <li class="list-group-item d-flex justify-content-between lh-condensed">
           <div>
             <h6 class="my-0">专利</h6>
-            <a href="" ng-click-copy="{{name}}家长您好，我们前段时间帮{{name}}整理了专利说明文件，之后根据专利说明文件创建了专利申请表，并帮{{name}}完成了专利的申请。今天我们收到邮件，{{name}}的专利的通过了！下面是专利的电子版，请保存起来（尤其是专利号Application Number），以后{{name}}申请可以用到。如果需要纸质版专利请来Irvine办公室领取：920 Roosevelt Suite 200, Irvine, CA 92620">
+            <a href="" ngclipboard data-clipboard-action="copy" data-clipboard-text="{{name}}家长您好，我们前段时间帮{{name}}整理了专利说明文件，之后根据专利说明文件创建了专利申请表，并帮{{name}}完成了专利的申请。今天我们收到邮件，{{name}}的专利的通过了！下面是专利的电子版，请保存起来（尤其是专利号Application Number），以后{{name}}申请可以用到。如果需要纸质版专利请来Irvine办公室领取：920 Roosevelt Suite 200, Irvine, CA 92620">
             <small class="text-muted">{{name}}家长您好，我们前段时间帮{{name}}整理了专利说明文件，之后根据专利说明文件创建了专利申请表，并帮{{name}}完成了专利的申请。今天我们收到邮件，{{name}}的专利的通过了！下面是专利的电子版，请保存起来（尤其是专利号Application Number），以后{{name}}申请可以用到。如果需要纸质版专利请来Irvine办公室领取：920 Roosevelt Suite 200, Irvine, CA 92620</small>
           </a>
           </div>
@@ -89,7 +92,7 @@
         <li class="list-group-item d-flex justify-content-between lh-condensed">
           <div>
             <h6 class="my-0">论文</h6>
-            <a href="" ng-click-copy="{{name}}妈妈您好，我们这几周帮{{name}}把文章润色，修改和整理了一下。之后确定了最终稿，今天投递到了下面这个国际会议：
+            <a href="" ngclipboard data-clipboard-action="copy" data-clipboard-text="{{name}}妈妈您好，我们这几周帮{{name}}把文章润色，修改和整理了一下。之后确定了最终稿，今天投递到了下面这个国际会议：
 
 会议名称：
 {{conferenceName}}
@@ -119,21 +122,21 @@
         <li class="list-group-item d-flex justify-content-between lh-condensed">
           <div>
             <h6 class="my-0">论文接收1</h6>
-            <a href="" ng-click-copy="{{name}},论文被接收发表了！快看一下Email">
+            <a href="" ngclipboard data-clipboard-action="copy" data-clipboard-text="{{name}},论文被接收发表了！快看一下Email">
               <small class="text-muted">{{name}},论文被接收发表了！快看一下Email</small>
             </a>
           </div>
         </li>
         <li class="list-group-item d-flex justify-content-between lh-condensed">
           <div>            
-            <a href="" ng-click-copy="我看这篇文章被好几个评委审阅了，写得很不错！下面尽快按照Email上的要求注册一下会议，然后准备一下Copyright Form还有把论文的最终版email给会议组委会。">
+            <a href="" ngclipboard data-clipboard-action="copy" data-clipboard-text="我看这篇文章被好几个评委审阅了，写得很不错！下面尽快按照Email上的要求注册一下会议，然后准备一下Copyright Form还有把论文的最终版email给会议组委会。">
               <small class="text-muted">我看这篇文章被好几个评委审阅了，写得很不错！下面尽快按照Email上的要求注册一下会议，然后准备一下Copyright Form还有把论文的最终版email给会议组委会。</small>
             </a>
           </div>
         </li>
         <li class="list-group-item d-flex justify-content-between lh-condensed">
           <div>
-            <a href="" ng-click-copy="这个论文非常重要，一定要写进你的申请材料里面。">
+            <a href="" ngclipboard data-clipboard-action="copy" data-clipboard-text="这个论文非常重要，一定要写进你的申请材料里面。">
               <small class="text-muted">这个论文非常重要，一定要写进你的申请材料里面。</small>
             </a>
           </div>
@@ -145,21 +148,21 @@
         <li class="list-group-item d-flex justify-content-between lh-condensed">
           <div>
             <h6 class="my-0">项目结果</h6>
-            <a href="" ng-click-copy="{{name}}妈妈您好，我重新建了一个群，主要想把这个总结性文档发给大家。这个文档包含了所有过去{{name}}在这个项目上出的成绩和经历。目的是帮助{{name}}把这些内容融入到大学申请的材料里。">
+            <a href="" ngclipboard data-clipboard-action="copy" data-clipboard-text="{{name}}妈妈您好，我重新建了一个群，主要想把这个总结性文档发给大家。这个文档包含了所有过去{{name}}在这个项目上出的成绩和经历。目的是帮助{{name}}把这些内容融入到大学申请的材料里。">
               <small class="text-muted">{{name}}妈妈您好，我重新建了一个群，主要想把这个总结性文档发给大家。这个文档包含了所有过去{{name}}在这个项目上出的成绩和经历。目的是帮助{{name}}把这些内容融入到大学申请的材料里。</small>
             </a>
           </div>
         </li>
         <li class="list-group-item d-flex justify-content-between lh-condensed">
           <div>            
-            <a href="" ng-click-copy="每一段经历我给出了一个参考的写法，同时我解释了一下各个经历的意义。请您和{{name}}仔细阅读一遍，看看有没有什么具体的问题。如果有不清楚的地方，请务必和我确认。同时，这个文档请您注意保密，毕竟涉及到{{name}}的申请和背景信息。">
+            <a href="" ngclipboard data-clipboard-action="copy" data-clipboard-text="每一段经历我给出了一个参考的写法，同时我解释了一下各个经历的意义。请您和{{name}}仔细阅读一遍，看看有没有什么具体的问题。如果有不清楚的地方，请务必和我确认。同时，这个文档请您注意保密，毕竟涉及到{{name}}的申请和背景信息。">
               <small class="text-muted">每一段经历我给出了一个参考的写法，同时我解释了一下各个经历的意义。请您和{{name}}仔细阅读一遍，看看有没有什么具体的问题。如果有不清楚的地方，请务必和我确认。同时，这个文档请您注意保密，毕竟涉及到{{name}}的申请和背景信息。</small>
             </a>
           </div>
         </li>
         <li class="list-group-item d-flex justify-content-between lh-condensed">
           <div>
-            <a href="" ng-click-copy="{{name}}绝对是咱们带过的最优秀的几个同学之一，我对{{name}}非常有信心。期待{{name}}申请的好消息。下面还有什么能帮得上的，请随时告诉我和李老师。">
+            <a href="" ngclipboard data-clipboard-action="copy" data-clipboard-text="{{name}}绝对是咱们带过的最优秀的几个同学之一，我对{{name}}非常有信心。期待{{name}}申请的好消息。下面还有什么能帮得上的，请随时告诉我和李老师。">
               <small class="text-muted">{{name}}绝对是咱们带过的最优秀的几个同学之一，我对{{name}}非常有信心。期待{{name}}申请的好消息。下面还有什么能帮得上的，请随时告诉我和李老师。</small>
             </a>
           </div>
