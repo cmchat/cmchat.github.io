@@ -11,8 +11,11 @@ angular.module('v3App', ['ngclipboard'])
     var projectUrl = url.searchParams.get("projectUrl");
     var courseId = url.searchParams.get("courseId");
     var instructorName = url.searchParams.get("instructorName");
-    var nextCourse = url.searchParams.get("nextCourse");    
+    var nextCourse = url.searchParams.get("nextCourse");
     var sid = url.searchParams.get("sid");
+    var conferenceName = url.searchParams.get("conferenceName");
+    var conferenceWeb = url.searchParams.get("conferenceWeb");
+    var patentNumber = url.searchParams.get("patentNumber");
 
     console.log(stuName);
     console.log(studentId);
@@ -20,13 +23,18 @@ angular.module('v3App', ['ngclipboard'])
     console.log(projectUrl);
     console.log(nextCourse);
     console.log(sid);
+    console.log("patentNumber");
+    console.log(patentNumber);
 
     if (nextCourse != null) {
     	$scope.nextCourse = nextCourse;
     }
 
-    $scope.name = stuName;    
+    $scope.name = stuName;  
     $scope.instructorName = instructorName;
+    $scope.conferenceName = conferenceName;
+    $scope.conferenceWeb = conferenceWeb;
+    $scope.patentNumber = patentNumber;
     
   	$scope.reset = function () {
   		console.log("clicked");
