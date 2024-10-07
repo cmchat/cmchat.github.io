@@ -26,7 +26,7 @@ angular.module('v3App', ['ngclipboard'])
 
     $scope.name = stuName;
     $scope.sid = sid;
-    $scope.summaryURL = "https://codingmind.com/feedback?studentId=" + studentId + "&courseId=" + courseId;
+    $scope.summaryURL = "https://codingmind.com/cn/feedback?studentId=" + studentId + "&courseId=" + courseId;
     $scope.projectURL = projectUrl;
 
   	$scope.reset = function () {
