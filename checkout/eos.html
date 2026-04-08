@@ -431,7 +431,15 @@ Please find the introduction to our AI Curriculum System below for a clearer ove
             </button>
             <button class="btn btn-outline-secondary" type="button" ngclipboard data-clipboard-target="#aiFeedbackText" ng-disabled="!aiFeedback">Copy</button>
           </div>
-          <textarea class="form-control" id="aiFeedbackText" rows="6" ng-model="aiFeedback" placeholder="Click 'Get Feedback' to generate AI feedback..." readonly></textarea>
+          <div class="position-relative">
+            <textarea class="form-control" id="aiFeedbackText" rows="6" ng-model="aiFeedback" placeholder="Click 'Get Feedback' to generate AI feedback..." readonly ng-class="{'text-muted': loadingFeedback}"></textarea>
+            <div ng-show="loadingFeedback" class="position-absolute d-flex flex-column justify-content-center align-items-center" style="top: 0; left: 0; right: 0; bottom: 0; background: rgba(255,255,255,0.8); border-radius: 0.25rem;">
+              <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Loading...</span>
+              </div>
+              <div class="mt-2 text-primary font-weight-bold">Generating feedback...</div>
+            </div>
+          </div>
           <small class="text-danger" ng-show="feedbackError">{{feedbackError}}</small>
         </div>
 
