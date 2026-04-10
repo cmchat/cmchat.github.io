@@ -19,10 +19,13 @@ angular.module('v3App', ['ngclipboard'])
 
     $scope.name = stuName;
     $scope.sid = sid;
+    $scope.studentId = studentId;
     $scope.summaryURL = "https://codingmind.com/cn/feedback?studentId=" + studentId + "&courseId=" + courseId;
     $scope.projectURL = projectUrl;
     $scope.surveyURL = "https://codingmind.com/cn/survey?studentId=" + studentId + "&courseId=" + courseId;
     $scope.surveyURLEn = "https://codingmind.com/survey?studentId=" + studentId + "&courseId=" + courseId;
+    $scope.pathURL = "https://path.codingmind.com/path/" + studentId + "/cn";
+    $scope.pathURLEn = "https://path.codingmind.com/path/" + studentId;
 
     // AI Feedback
     $scope.aiFeedback = "";
