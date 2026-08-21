@@ -1,1 +1,435 @@
+<!doctype html>
+<html ng-app="v3App" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">    
+    <meta name="generator" content="Jekyll v4.1.1">
+    <title>Coding Minds Feedback</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+    <script src="https://cdn.rawgit.com/zenorocha/clipboard.js/master/dist/clipboard.min.js"></script>
+    <!-- <script type="text/javascript" src="https://cdn.rawgit.com/JustMaier/6ef7788709d675bd8230/raw/3d39d50e66d8d77e05656ed7dd09298be7e86f1f/ngClickCopy.js"></script> -->
+    <script src="dist/ngclipboard.min.js"></script>
+    <script src="control.js"></script>
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/checkout/">
 
+    <!-- Bootstrap core CSS -->
+    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      .form-control[readonly] {
+        background-color: #fff;
+      }
+    </style>
+    <!-- Custom styles for this template -->
+    <link href="form-validation.css" rel="stylesheet">
+  </head>
+  <body class="bg-light" ng-controller="MessageController">
+    <div class="container">
+  <div class="py-5 text-center">
+    <img class="d-block mx-auto mb-4" src="../assets/brand/bootstrap-solid.svg" alt="" width="72" height="72">
+    <h2>Feedback</h2>
+    <p class="lead">Detailed, Fast, Encouraging</p>
+  </div>
+
+  <div class="row">
+    
+    <div class="col-md-6 order-md-2 mb-6">
+      <h4 class="d-flex justify-content-between align-items-center mb-3">
+        <span class="text-muted">Messages (Click to Copy)</span>
+        <!-- <span class="badge badge-secondary badge-pill">3</span> -->
+        </li>
+	</h4>
+       <ul class="list-group mb-3">
+        <li class="list-group-item d-flex justify-content-between lh-condensed bg-warning">
+          <div>
+            <h6 class="my-0"><strong>（中文版本）未来编程学习规划以及AI课程推荐反馈：</strong></h6>
+          </div>
+        </li>
+        <li class="list-group-item d-flex justify-content-between lh-condensed">
+          <div class="text-success">
+            <h6 class="my-0">Step 0 （发编程学习规划path）</h6>
+            <a href="" ngclipboard data-clipboard-action="copy" data-clipboard-text="{{name}}家长，您好！为帮助{{name}}同学更高效、系统地提升编程能力，我们已将{{name}}近期的学习规划与目标整理为一张路径图。此次规划不仅对上一阶段的学习情况进行了总结，也明确了下一阶段的课程安排，同时进一步细化了竞赛参与与个人创业项目的目标及时间节点，为后续学习提供更清晰的发展方向。以下是路径图：
+
+{{pathURL}}"><small>{{name}}家长，您好！为帮助{{name}}同学更高效、系统地提升编程能力，我们已将{{name}}近期的学习规划与目标整理为一张路径图。此次规划不仅对上一阶段的学习情况进行了总结，也明确了下一阶段的课程安排，同时进一步细化了竞赛参与与个人创业项目的目标及时间节点，为后续学习提供更清晰的发展方向。以下是路径图：<br><br><span class="text-primary">{{pathURL}}</span></small></a>
+            <br><a href="{{pathURL}}" target="_blank" class="btn btn-sm btn-outline-secondary mt-2">查看路径图</a>
+          </div>
+          <!-- <span class="text-muted">$5</span> -->
+        </li>
+        <li class="list-group-item d-flex justify-content-between lh-condensed">
+          <div class="text-success">
+            <h6 class="my-0">Step 1 （发接下来的竞赛）</h6>
+            <a href="" ngclipboard data-clipboard-action="copy" data-clipboard-text="请您留意计划中给出的{{name}}的下一次竞赛是2026年9月的Ignite CS Expo竞赛，同时，我们打算让{{name}}在[Project Year]年开始尝试第一个自己的个性化创业项目。"><small>请您留意计划中给出的{{name}}的下一次竞赛是2026年9月的Ignite CS Expo竞赛，同时，我们打算让{{name}}在[Project Year]年开始尝试第一个自己的个性化创业项目。</small></a>
+          </div>
+          <!-- <span class="text-muted">$5</span> -->
+        </li>
+        <li class="list-group-item d-flex justify-content-between lh-condensed">
+          <div class="text-success">
+            <h6 class="my-0">Step 2 （发馒头AI系列课程介绍，如果群里已经发过了，就跳过）</h6>
+            <a href=""
+   ngclipboard
+   data-clipboard-action="copy"
+   data-clipboard-text="随着 AI 技术的发展，我们 Coding Minds 也正式升级了全新的馒头AI（MindDo AI）学习体系。&#10;&#10;接下来，{{name}}同学会结合目前的学习基础、兴趣和未来目标，在完成 Python 系列课程后，逐步进入更适合的 AI 学习路径。新的课程体系会更加注重“Project-Based Learning（项目式学习）”，让{{name}}同学从真实问题和兴趣出发，借助 AI 完成从想法、设计到开发、迭代和成果展示的完整过程，真正做到在实践中学习，在创造中成长。&#10;&#10;目前馒头AI主要分为四个学习方向：AI Native（AI 产品开发）、AI Domain（AI＋跨学科应用）、AI System（Agent 与自动化系统）以及 AI Science（AI 原理与科研）。不同方向可以根据{{name}}同学的兴趣和目标灵活组合，形成个性化的学习与发展路径。&#10;&#10;在此基础上，我们也会进一步结合科技竞赛与创业项目，让优秀的课堂项目继续深入和延伸，逐步发展为更有价值的作品、竞赛项目或创业实践，帮助{{name}}同学积累更有深度的 Projects、Portfolio 和实践经历。&#10;&#10;结合{{name}}同学目前的学习基础，我们建议{{name}}同学下一阶段可以从 AI Native 方向的 AI Builder 课程开始，逐步学习如何借助 AI 完成真实项目和产品开发，并为后续的竞赛、创业及更多项目实践做好准备。下面给您发一下我们的馒头AI课程体系介绍，方便您了解{{name}}同学接下来的整体学习规划。">
+				<small>随着 AI 技术的发展，我们 Coding Minds 也正式升级了全新的 馒头AI（MindDo AI）学习体系。<br><br>接下来，{{name}}同学会结合目前的学习基础、兴趣和未来目标，在完成 Python 系列课程后，逐步进入更适合的 AI 学习路径。新的课程体系会更加注重 “Project-Based Learning（项目式学习）”，让{{name}}从真实问题和兴趣出发，借助 AI 完成从想法、设计到开发、迭代和成果展示的完整过程，真正做到在实践中学习，在创造中成长。<br>
+					<br>目前馒头AI主要分为四个学习方向：AI Native（AI产品开发）、AI Domain（AI+跨学科应用）、AI System（Agent与自动化系统）以及 AI Science（AI原理与科研）。不同方向可以根据{{name}}的兴趣和目标灵活组合，形成个性化的学习与发展路径。<br>
+					<br>在此基础上，我们也会进一步结合科技竞赛与创业项目，让优秀的课堂项目继续深入和延伸，逐步发展为更有价值的作品、竞赛项目或创业实践，帮助{{name}}积累更有深度的 Projects、Portfolio 和实践经历。<br>
+					<br>结合{{name}}同学目前的学习基础，我们建议{{name}}同学下一阶段可以从 AI Native 方向的 AI Builder 课程开始，逐步学习如何借助 AI 完成真实项目和产品开发，并为后续的竞赛、创业及更多项目实践做好准备。下面给您发一下我们的馒头AI课程体系介绍，方便您了解{{name}}同学接下来整体的学习规划。<br></small></a>
+            <br><a href="../assets/img/minddoai.jpg" download="AI课程路径图.jpg" class="btn btn-sm btn-outline-primary mt-2">下载馒头AI介绍图片以及转发公众号链接</a>
+            <a href="../assets/img/minddoai.jpg" target="_blank" class="btn btn-sm btn-outline-secondary mt-2">预览图片</a>
+          </div>
+          <!-- <span class="text-muted">$5</span> -->
+        </li>
+        <li class="list-group-item d-flex justify-content-between lh-condensed bg-warning">
+          <div>
+            <h6 class="my-0"><strong>（英文版本）未来编程学习规划以及AI课程推荐反馈：</strong></h6>
+          </div>
+        </li>
+        <li class="list-group-item d-flex justify-content-between lh-condensed">
+          <div class="text-success">
+            <h6 class="my-0">Step 0 （发path）</h6>
+            <a href="" ngclipboard data-clipboard-action="copy" data-clipboard-text="Good     , {{name}}'s parents! Based on {{name}}'s current progress, we have designed a study path for his/her future programming journey. With the new plan, we not only summarize the student's performance over the past semester but also provide {{name}} with the schedule for the upcoming term. In addition, we are gaining increasing clarity on the goals and timelines for each student's competitions and individual startup projects, helping to better guide their future studies in programming and computer science.
+
+{{pathURLEn}}"><small>Good     , {{name}}'s parents! Based on {{name}}'s current progress, we have designed a study path for his/her future programming journey. With the new plan, we not only summarize the student's performance over the past semester but also provide {{name}} with the schedule for the upcoming term. In addition, we are gaining increasing clarity on the goals and timelines for each student's competitions and individual startup projects, helping to better guide their future studies in programming and computer science.<br><br><span class="text-primary">{{pathURLEn}}</span></small></a>
+            <br><a href="{{pathURLEn}}" target="_blank" class="btn btn-sm btn-outline-secondary mt-2">View Path</a>
+          </div>
+          <!-- <span class="text-muted">$5</span> -->
+        </li>
+        <li class="list-group-item d-flex justify-content-between lh-condensed">
+          <div class="text-success">
+            <h6 class="my-0">Step 1 （发竞赛）</h6>
+            <a href="" ngclipboard data-clipboard-action="copy" data-clipboard-text="Please keep following the plan, as {{name}}'s next goal is the Ignite CS Expo competition scheduled for September 2026, and in the meantime, we intend for {{name}} to start trying out his/her first personalized entrepreneurial project of his/her own in [Project Year]."><small>Please keep following the plan, as {{name}}'s next goal is the Ignite CS Expo competition scheduled for September 2026, and in the meantime, we intend for {{name}} to start trying out his/her first personalized entrepreneurial project of his/her own in [Project Year].</small></a>
+          </div>
+          <!-- <span class="text-muted">$5</span> -->
+        </li>
+        <li class="list-group-item d-flex justify-content-between lh-condensed">
+          <div class="text-success">
+            <h6 class="my-0">Step 2 （发AI课程介绍）</h6>
+            <a href="" ngclipboard data-clipboard-action="copy" data-clipboard-text="With the rapid advancement of AI technology, Coding Mind has officially upgraded our curriculum. In the future, {{name}} will transition into our AI Application Development pathway. This will include hands-on experience with &quot;AI Vibe Coding&quot; (AI-assisted development), a cutting-edge industry practice.
+
+Our goal is to ensure that while {{name}} masters technical skills, they also develop the ability to create real-world value using technology. Future sessions will focus more on practical projects and AI applications, and our instructors will provide regular updates on project milestones and learning goals.
+
+Please find the introduction to our AI Curriculum System below for a clearer overview of the long-term plan:"><small>With the rapid advancement of AI technology, Coding Mind has officially upgraded our curriculum. In the future, {{name}} will transition into our AI Application Development pathway. This will include hands-on experience with "AI Vibe Coding" (AI-assisted development), a cutting-edge industry practice.<br><br>Our goal is to ensure that while {{name}} masters technical skills, they also develop the ability to create real-world value using technology. Future sessions will focus more on practical projects and AI applications, and our instructors will provide regular updates on project milestones and learning goals.<br><br>Please find the introduction to our AI Curriculum System below for a clearer overview of the long-term plan:</small></a>
+            <br><a href="../assets/img/minddoai.jpg" download="minddoai.jpg" class="btn btn-sm btn-outline-primary mt-2">Download MINDDO AI Path Image</a>
+            <a href="../assets/img/minddoai.jpg" target="_blank" class="btn btn-sm btn-outline-secondary mt-2">Preview Image</a>
+          </div>
+          <!-- <span class="text-muted">$5</span> -->
+        </li>
+        <li class="list-group-item d-flex justify-content-between lh-condensed bg-warning">
+          <div>
+            <h6 class="my-0"><strong>（中文版本）End of Semester Feedback：</strong></h6>
+          </div>
+        </li>
+        <li class="list-group-item d-flex justify-content-between lh-condensed">
+          <div class="text-success">
+            <h6 class="my-0">Step 0 （跟家长打招呼）</h6>
+            <a href="" ngclipboard data-clipboard-action="copy" data-clipboard-text="{{name}}家长，您好！很荣幸能和孙老师跟授课老师一起为您评估这学期的学习情况，并且给您建议下一个阶段的学习安排。"><small>{{name}}家长，您好！很荣幸能和孙老师跟授课老师一起为您评估这学期的学习情况，并且给您建议下一个阶段的学习安排。</small></a>
+          </div>
+          <!-- <span class="text-muted">$5</span> -->
+        </li>
+        <li class="list-group-item d-flex justify-content-between lh-condensed">
+          <div class="text-success">
+            <h6 class="my-0">Step 1 （发我们系统根据授课老师平时反馈生成的AI Generated 反馈）</h6>
+            <a href="" ngclipboard data-clipboard-action="copy" data-clipboard-text="过去{{name}}同学这学期的学习期末反馈我发在这里，您有空可以看一下："><small>过去{{name}}同学这学期的学习期末反馈我发在这里，您有空可以看一下：</small></a>
+          </div>
+          <!-- <span class="text-muted">$5</span> -->
+        </li>
+        <li class="list-group-item d-flex justify-content-between lh-condensed">
+          <div class="text-success">
+            <h6 class="my-0">Step 2 （发同学课程项目）</h6>
+            <a href="" ngclipboard data-clipboard-action="copy" data-clipboard-text="{{name}}同学的课程项目我发在这里，请您看一下：
+
+{{projectURL}}"><small>{{name}}同学的课程项目我发在这里，请您看一下：<br><br><span class="text-primary">{{projectURL}}</span></small></a>
+          </div>
+          <!-- <span class="text-muted">$5</span> -->
+        </li>
+        <li class="list-group-item d-flex justify-content-between lh-condensed">
+          <div class="text-success">
+            <h6 class="my-0">Step 3 （如家长没续课，继续建议课程；续课了则跳过）</h6>
+            <a href="" ngclipboard data-clipboard-action="copy" data-clipboard-text="我们正在安排下一步的学习计划。我们建议下阶段可以继续      课程，安排好了会再在群里跟您确认，如果需要调整课程时间或者有其他问题的话，请随时在群里和我们联系沟通。"><small>我们正在安排下一步的学习计划。我们建议下阶段可以继续      课程，安排好了会再在群里跟您确认，如果需要调整课程时间或者有其他问题的话，请随时在群里和我们联系沟通。</small></a>
+          </div>
+          <!-- <span class="text-muted">$5</span> -->
+        </li>
+        <li class="list-group-item d-flex justify-content-between lh-condensed">
+          <div class="text-success">
+            <h6 class="my-0">Final Step （建议家长填写我们的反馈表）</h6>
+            <a href="" ngclipboard data-clipboard-action="copy" data-clipboard-text="请您抽空填写我们的反馈表，您的宝贵意见将帮助我们不断改进课程和教学质量，对我们至关重要！同时也欢迎您随时与我们联系，感谢您一直以来的支持！
+
+{{surveyURL}}"><small>请您抽空填写我们的反馈表，您的宝贵意见将帮助我们不断改进课程和教学质量，对我们至关重要！同时也欢迎您随时与我们联系，感谢您一直以来的支持！<br><br><span class="text-primary">{{surveyURL}}</span></small></a>
+          </div>
+          <!-- <span class="text-muted">$5</span> -->
+        </li>
+        <li class="list-group-item d-flex justify-content-between lh-condensed bg-warning">
+          <div>
+            <h6 class="my-0"><strong>（英文版本）End of Semester Feedback：</strong></h6>
+          </div>
+        </li>
+        <li class="list-group-item d-flex justify-content-between lh-condensed">
+          <div class="text-success">
+            <h6 class="my-0">Step 0</h6>
+            <a href="" ngclipboard data-clipboard-action="copy" data-clipboard-text="Good     , {{name}}'s parents! We are sending this message to evaluate {{name}}'s learning situation this semester with Dr.Sun, and suggest {{name}}'s next stage of learning arrangements."><small>Good     , {{name}}'s parents! We are sending this message to evaluate {{name}}'s learning situation this semester with Dr.Sun, and suggest {{name}}'s next stage of learning arrangements.</small></a>
+          </div>
+          <!-- <span class="text-muted">$5</span> -->
+        </li>
+        <li class="list-group-item d-flex justify-content-between lh-condensed">
+          <div class="text-success">
+            <h6 class="my-0">Step 1</h6>
+            <a href="" ngclipboard data-clipboard-action="copy" data-clipboard-text="This is {{name}}'s study summary for the past semester, please review:"><small>This is {{name}}'s study summary for the past semester, please review:</small></a>
+          </div>
+          <!-- <span class="text-muted">$5</span> -->
+        </li>
+        <li class="list-group-item d-flex justify-content-between lh-condensed">
+          <div class="text-success">
+            <h6 class="my-0">Step 2</h6>
+            <a href="" ngclipboard data-clipboard-action="copy" data-clipboard-text="This is {{name}}'s final presentation, please review:
+
+{{projectURL}}"><small>This is {{name}}'s final presentation, please review:<br><br><span class="text-primary">{{projectURL}}</span></small></a>
+          </div>
+          <!-- <span class="text-muted">$5</span> -->
+        </li>
+        <li class="list-group-item d-flex justify-content-between lh-condensed">
+          <div class="text-success">
+            <h6 class="my-0">Step 3 （如家长没续课，继续建议课程）</h6>
+            <a href="" ngclipboard data-clipboard-action="copy" data-clipboard-text="We recommend {{name}} continuing with the      course for the next session. We will confirm the details with you in the message once the schedule is finalized. If you need to adjust the class times or have any other questions, please feel free to contact us at any time."><small>We recommend {{name}} continuing with the      course for the next session. We will confirm the details with you in the message once the schedule is finalized. If you need to adjust the class times or have any other questions, please feel free to contact us at any time.</small></a>
+          </div>
+          <!-- <span class="text-muted">$5</span> -->
+        </li>
+        <li class="list-group-item d-flex justify-content-between lh-condensed">
+          <div class="text-success">
+            <h6 class="my-0">Final Step （建议家长填写我们的反馈表）</h6>
+            <a href="" ngclipboard data-clipboard-action="copy" data-clipboard-text="Please take the time to fill out our feedback form, your valuable opinions are vital to us! It will help us to continuously improve our courses and teaching, and we welcome you to contact us at any time to thank you for your support!
+{{surveyURLEn}}"><small>Please take the time to fill out our feedback form, your valuable opinions are vital to us! It will help us to continuously improve our courses and teaching, and we welcome you to contact us at any time to thank you for your support!<br><span class="text-primary">{{surveyURLEn}}</span></small></a>
+          </div>
+      </li>
+          <!-- <span class="text-muted">$12</span> -->
+        </li>
+
+        <li class="list-group-item d-flex justify-content-between lh-condensed">
+        <!-- <span class="text-muted">$12</span> -->
+      </h4>
+
+      <!-- <form class="card p-2">
+        <div class="input-group">
+          <input type="text" class="form-control" placeholder="Promo code">
+          <div class="input-group-append">
+            <button type="submit" class="btn btn-secondary">Redeem</button>
+          </div>
+        </div>
+      </form> -->
+    </div>
+
+    <div class="col-md-6 order-md-1">
+      <h4 class="mb-3">Student Info</h4>
+      <form class="needs-validation" novalidate>
+        <div class="row">
+          <div class="col-md-6 mb-3">
+            <label for="firstName">Student Name {{sid}}</label>
+            <input type="text" ng-model="name" class="form-control" id="firstName" placeholder="" value="">
+          </div>
+          <!-- <div class="col-md-6 mb-3">
+            <label for="lastName">Last name</label>
+            <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+            <div class="invalid-feedback">
+              Valid last name is required.
+            </div>
+          </div> -->
+        </div>
+
+        <div class="mb-3">
+          <label for="username">Semester Summary URL</label>
+          <div class="input-group">
+            <input type="text" ng-model="summaryURL" class="form-control" id="username" placeholder="Summary URL">
+            <a href="{{summaryURL}}" target="_blank">Test</a>
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <label>EOS AI Feedback</label>
+          <div class="input-group mb-2">
+            <button class="btn btn-primary" type="button" ng-click="getAIFeedback()" ng-disabled="loadingFeedback">
+              <span ng-show="!loadingFeedback">Get Feedback</span>
+              <span ng-show="loadingFeedback">
+                <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                Loading... (may take ~10s)
+              </span>
+            </button>
+            <button class="btn btn-outline-secondary" type="button" ngclipboard data-clipboard-target="#aiFeedbackText" ng-disabled="!aiFeedback">Copy</button>
+          </div>
+          <div class="position-relative">
+            <textarea class="form-control" id="aiFeedbackText" rows="6" ng-model="aiFeedback" placeholder="Click 'Get Feedback' to generate AI feedback..." readonly ng-class="{'text-muted': loadingFeedback}"></textarea>
+            <div ng-show="loadingFeedback" class="position-absolute d-flex flex-column justify-content-center align-items-center" style="top: 0; left: 0; right: 0; bottom: 0; background: rgba(255,255,255,0.8); border-radius: 0.25rem;">
+              <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Loading...</span>
+              </div>
+              <div class="mt-2 text-primary font-weight-bold">Generating feedback...</div>
+            </div>
+          </div>
+          <small class="text-danger" ng-show="feedbackError">{{feedbackError}}</small>
+        </div>
+
+        <div class="mb-3">
+          <label for="email">Project URL <span class="text-muted">(Optional)</span></label>
+          <input type="text" ng-model="projectURL" class="form-control" id="projectlink" placeholder="Project URL">
+          <a href="{{projectURL}}" target="_blank">Test</a>
+        </div>
+
+        <div class="mb-3">
+          <label>Survey Link (CN)</label>
+          <div class="input-group">
+            <input type="text" class="form-control" ng-model="surveyURL" id="surveyurl" readonly>
+            <div class="input-group-append">
+              <button class="btn btn-outline-secondary" type="button" ngclipboard data-clipboard-target="#surveyurl">Copy</button>
+            </div>
+            <a href="{{surveyURL}}" target="_blank" class="ml-2 align-self-center">Test</a>
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <label>Survey Link (EN)</label>
+          <div class="input-group">
+            <input type="text" class="form-control" ng-model="surveyURLEn" id="surveyurlen" readonly>
+            <div class="input-group-append">
+              <button class="btn btn-outline-secondary" type="button" ngclipboard data-clipboard-target="#surveyurlen">Copy</button>
+            </div>
+            <a href="{{surveyURLEn}}" target="_blank" class="ml-2 align-self-center">Test</a>
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <label for="email">Next Course <span class="text-muted">(Optional)</span></label>
+          <input type="text" ng-model="nextCourse" class="form-control" id="nextcourse" placeholder="Course name">
+        </div>
+
+        <!-- <div class="mb-3">
+          <label for="address">Address</label>
+          <input type="text" class="form-control" id="address" placeholder="1234 Main St" required>
+          <div class="invalid-feedback">
+            Please enter your shipping address.
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <label for="address2">Address 2 <span class="text-muted">(Optional)</span></label>
+          <input type="text" class="form-control" id="address2" placeholder="Apartment or suite">
+        </div>
+
+        <div class="row">
+          <div class="col-md-5 mb-3">
+            <label for="country">Country</label>
+            <select class="custom-select d-block w-100" id="country" required>
+              <option value="">Choose...</option>
+              <option>United States</option>
+            </select>
+            <div class="invalid-feedback">
+              Please select a valid country.
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <label for="state">State</label>
+            <select class="custom-select d-block w-100" id="state" required>
+              <option value="">Choose...</option>
+              <option>California</option>
+            </select>
+            <div class="invalid-feedback">
+              Please provide a valid state.
+            </div>
+          </div>
+          <div class="col-md-3 mb-3">
+            <label for="zip">Zip</label>
+            <input type="text" class="form-control" id="zip" placeholder="" required>
+            <div class="invalid-feedback">
+              Zip code required.
+            </div>
+          </div>
+        </div> -->
+
+        <!-- <hr class="mb-4">
+        <div class="custom-control custom-checkbox">
+          <input type="checkbox" class="custom-control-input" id="same-address">
+          <label class="custom-control-label" for="same-address">Shipping address is the same as my billing address</label>
+        </div>
+        <div class="custom-control custom-checkbox">
+          <input type="checkbox" class="custom-control-input" id="save-info">
+          <label class="custom-control-label" for="save-info">Save this information for next time</label>
+        </div> -->
+
+        <!-- <hr class="mb-4">
+        <h4 class="mb-3">Payment</h4>
+
+        <div class="d-block my-3">
+          <div class="custom-control custom-radio">
+            <input id="credit" name="paymentMethod" type="radio" class="custom-control-input" checked required>
+            <label class="custom-control-label" for="credit">Credit card</label>
+          </div>
+          <div class="custom-control custom-radio">
+            <input id="debit" name="paymentMethod" type="radio" class="custom-control-input" required>
+            <label class="custom-control-label" for="debit">Debit card</label>
+          </div>
+          <div class="custom-control custom-radio">
+            <input id="paypal" name="paymentMethod" type="radio" class="custom-control-input" required>
+            <label class="custom-control-label" for="paypal">PayPal</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 mb-3">
+            <label for="cc-name">Name on card</label>
+            <input type="text" class="form-control" id="cc-name" placeholder="" required>
+            <small class="text-muted">Full name as displayed on card</small>
+            <div class="invalid-feedback">
+              Name on card is required
+            </div>
+          </div>
+          <div class="col-md-6 mb-3">
+            <label for="cc-number">Credit card number</label>
+            <input type="text" class="form-control" id="cc-number" placeholder="" required>
+            <div class="invalid-feedback">
+              Credit card number is required
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-3 mb-3">
+            <label for="cc-expiration">Expiration</label>
+            <input type="text" class="form-control" id="cc-expiration" placeholder="" required>
+            <div class="invalid-feedback">
+              Expiration date required
+            </div>
+          </div>
+          <div class="col-md-3 mb-3">
+            <label for="cc-cvv">CVV</label>
+            <input type="text" class="form-control" id="cc-cvv" placeholder="" required>
+            <div class="invalid-feedback">
+              Security code required
+            </div>
+          </div>
+        </div> -->
+        <hr class="mb-4">
+        <button class="btn btn-primary btn-lg btn-block" onclick="reset()">Reset</button>
+      </form>
+    </div>
+  </div>
+
+  <footer class="my-5 pt-5 text-muted text-center text-small">
+    <p class="mb-1">&copy; 2020 Coding Minds, Inc.</p>    
+  </footer>
+</div>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+      <script>window.jQuery || document.write('<script src="../assets/js/vendor/jquery.slim.min.js"><\/script>')</script><script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="form-validation.js"></script>        
+        
+  </body>
+</html>
